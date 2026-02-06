@@ -1,35 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
+  height: 100vh;
+  width: 100vw;
+  background-color: #eaf6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
 }
 
+/* Centraliza tudo na tela */
 .container {
-    max-width: 600px;
-    margin: 60px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
+  height: 90vh;
+  width: 90vw;
+  max-width: 700px;
+  background-color: #F9FDFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1F86C5;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
 }
 
-h1,
+/* Títulos */
+h1, h2 {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
 h2 {
-    text-align: center;
+  font-size: 2rem;
 }
 
-button,
-.btn {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: #4f46e5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+/* Texto comum */
+p, small {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #1F86C5;
 }
 
-button:hover,
-.btn:hover {
-    background: #3730a3;
+/* Botões e links */
+button, .btn {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #1F86C5;
+  margin: 15px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 2px solid #1F86C5;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover inspirado no seu React */
+button:hover, .btn:hover {
+  background-color: #1F86C5;
+  color: #a3cfde;
+  text-shadow: -1px -1px 5px #40acc7;
+}
+
+/* Alternativas das questões */
+#alternativas button {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Feedback */
+#feedback {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Cards de seleção */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
 }
