@@ -3,29 +3,41 @@ let indice = 0;
 let acertos = Number(localStorage.getItem("acertos")) || 0;
 let erros = Number(localStorage.getItem("erros")) || 0;
 
-const questoes = [
-  {
+{
     tema: "Estatística",
-    pergunta: "Em uma turma, as notas de Matemática de três alunos foram 6, 8 e 10. Para analisar o desempenho médio da turma, o professor calculou a média aritmética dessas notas. Qual foi o valor encontrado?",
-    alternativas: ["7", "8", "9", "10"],
-    correta: 1
+    pergunta: "(ENEM 2025) Três dados cúbicos, com faces numeradas de 1 a 6, foram utilizados em um jogo. Artur escolheu dois dados, e João ficou com o terceiro. O jogo consiste em ambos lançarem seus dados, observarem os números nas faces voltadas para cima e compararem o maior número obtido por Artur com o número obtido por João. Vence o jogador que obtiver o maior número. Em caso de empate, a vitória é de João. \n O jogador que tem a maior probabilidade de vitória é",
+    alternativas: [
+      "(A) Artur, com probabilidade de 2/3;", 
+      "(B) João, com probabilidade de 4/9;", 
+      "(C) Artur, com probabilidade de 91/216;", 
+      "(D) João, com probabilidade de 91/216;", 
+      "(E) Artur, com probabilidade de 125/216;"
+    ],
+    correta: 4
   },
   {
     tema: "Geometria",
-    pergunta: "Uma praça tem o formato de um triângulo. Para descrever essa forma geométrica, é correto afirmar que um triângulo possui:",
+    pergunta: "(Enem 2022) Uma cozinheira produz docinhos especiais por encomenda. Usando uma receita-base de massa, ela prepara uma porção, com a qual produz 50 docinhos maciços de formato esférico, com 2 cm de diâmetro. Um cliente encomenda 150 desses docinhos, mas pede que cada um tenha formato esférico com 4 cm de diâmetro. A cozinheira pretende preparar o número exato de porções da receita-base de massa necessário para produzir os docinhos dessa encomenda. \n Quantas porções da receita-base de massa ela deve preparar para atender esse cliente?",
     alternativas: [
-      "Dois lados e dois ângulos",
-      "Três lados e três ângulos",
-      "Quatro lados e quatro ângulos",
-      "Apenas três ângulos"
+      "(A) 2",
+      "(B) 3",
+      "(C) 6",
+      "(D) 12",
+      "(E) 24"
     ],
-    correta: 1
+    correta: 4
   },
   {
-    tema: "Funções",
-    pergunta: "Um estudante analisou o gráfico de uma função do 1º grau utilizada para representar o crescimento do número de inscritos em um curso ao longo do tempo. O formato do gráfico dessa função é uma:",
-    alternativas: ["Curva", "Parábola", "Reta", "Circunferência"],
-    correta: 2
+    tema: "Unidades de Medidas",
+    pergunta: "Enem (2022) Ao escutar à notícia de que um filme recém-lançado arrecadou, no primeiro mês de lançamento, R$ 1,35 bilhão em bilheteria, um estudante escreveu corretamente o número que representa essa quantia, com todos os seus algarismos. \n O número escrito pelo estudante foi",
+    alternativas: [
+      "(A) 135 000,00",
+      "(B) 1 350 000,00",
+      "(C) 13 500 000,00",
+      "(D) 135 000 000,00",
+      "(E) 1 350 000 000,00"
+    ],
+    correta: 4
   }
 ];
 
