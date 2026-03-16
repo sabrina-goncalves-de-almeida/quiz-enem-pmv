@@ -3,7 +3,8 @@ let indice = 0;
 let acertos = Number(localStorage.getItem("acertos")) || 0;
 let erros = Number(localStorage.getItem("erros")) || 0;
 
-{
+const questoes = [
+  {
     tema: "Estatística",
     pergunta: "(ENEM 2025) Três dados cúbicos, com faces numeradas de 1 a 6, foram utilizados em um jogo. Artur escolheu dois dados, e João ficou com o terceiro. O jogo consiste em ambos lançarem seus dados, observarem os números nas faces voltadas para cima e compararem o maior número obtido por Artur com o número obtido por João. Vence o jogador que obtiver o maior número. Em caso de empate, a vitória é de João. \n O jogador que tem a maior probabilidade de vitória é",
     alternativas: [
