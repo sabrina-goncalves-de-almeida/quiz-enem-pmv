@@ -29,7 +29,7 @@ const questoes = [
     correta: 4
   },
   {
-    tema: "Unidades de Medidas",
+    tema: "Matemática Básica",
     pergunta: "Enem (2022) Ao escutar à notícia de que um filme recém-lançado arrecadou, no primeiro mês de lançamento, R$ 1,35 bilhão em bilheteria, um estudante escreveu corretamente o número que representa essa quantia, com todos os seus algarismos. \n O número escrito pelo estudante foi",
     alternativas: [
       "(A) 135 000,00",
